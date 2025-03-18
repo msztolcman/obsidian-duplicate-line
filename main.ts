@@ -4,8 +4,6 @@ import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Set
 
 export default class DuplicateLine extends Plugin {
 	async onload() {
-		await this.loadSettings();
-
 		// This adds a simple command that can be triggered anywhere
 		this.addCommand({
 			id: 'duplicate-line',
